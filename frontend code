@@ -1,0 +1,243 @@
+
+#html code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India T20 World Cup 2024 Celebration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero">
+        <h1>🏆 INDIA LIFT THE CHAMPION TROPHY 2025! 🏏</h1>
+        <p class="celebration">A historic victory for Team India!
+        </p>
+ 
+
+ <div class="container">
+        <p class="title">ICC Champions Trophy Titles Till Now</p>
+        
+        <p class="entry"><span class="country">India</span> - 2 titles (<span class="years">2013, 2025</span>)</p>
+        <p class="entry"><span class="country">Australia</span> - 2 titles (<span class="years">2006,2009</span>)</p>
+        <p class="entry"><span class="country">New Zealand</span> - 1 title (<span class="years">2000</span>)</p>
+        <p class="entry"><span class="country">South Africa</span> - 1 title (<span class="years">1998</span>)</p>
+        <p class="entry"><span class="country">West Indies</span> - 1 title (<span class="years">2004</span>)</p>
+        <p class="entry"><span class="country">Pakistan</span> - 1 title (<span class="years">2017</span>)</p>
+    </div>
+    
+    <p2>
+         I want to appreciate everyone who came out and supported us. 
+         The crowd here has been magnificent, it is not our home ground but they made it our home ground. 
+         The number of people that came here to watch us play and to get that result was very satisfying..........: Rohit Sharma | India captain:
+    </p2>
+
+         
+        <canvas class="fireworks"></canvas>
+    </div>
+
+    <div class="players">
+        <div class="player-card">
+            <img src="https://c.ndtvimg.com/2025-03/2qva4cs_virat-kohli-rohit-sharma_625x300_09_March_25.jpeg?im=FeatureCrop,algorithm=dnn,width=806,height=605" alt="Rohit Sharma">
+            <h3>Rohit Sharma - Captain</h3>
+        </div>
+        <div class="player-card">
+            <img src="https://c.ndtvimg.com/2025-03/qakd2b4_rohit-sharma-virat-kohli-afp_625x300_09_March_25.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605" alt="Virat Kohli">
+            <h3>Virat Kohli</h3>
+        </div>
+        <div class="player-card">
+            <img src="https://cf-img-a-in.tosshub.com/lingo/stak/images/breaking_news/202503/67cdcfe4a8eac-virat-kohli-of-india-lifts-the-icc-champions-trophy-after-winning-the-the-icc-champions-trophy-2025-092903478-16x9.jpg?size=1600:900" alt="whole team">
+            <h3>whole team</h3>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+.....................................................................................................................................
+................................................................................................................................
+#css code
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black; /* Dark background for celebration */
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/India_national_cricket_team.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.celebration {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 2px 2px 10px rgba(255,255,0,0.8);
+}
+
+/* Description Section */
+.description {
+    text-align: left;
+    background-color: #bea9ff; /* Fixed color syntax */
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Players Section */
+.players {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 10px;
+}
+
+.player-card {
+    width: 250px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+    transform: scale(1.1);
+}
+
+.player-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Fireworks Effect */
+.fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
+/* Container Section */
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    color: black; /* Set text color for readability */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.entry {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.country {
+    font-weight: bold;
+    color: #333;
+}
+
+.years {
+    color: #555;
+}
+...........................................................................................................................................
+............................................................................................................................................
+
+#javascript 
+
+// your code goes here
+// Fireworks Effect
+const canvas = document.querySelector('.fireworks');
+const ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let fireworks = [];
+
+class Firework {
+    constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.radius = 3;
+        this.alpha = 1;
+    }
+
+    update() {
+        this.y -= 4;
+        this.alpha -= 0.02;
+    }
+
+    draw() {
+        ctx.globalAlpha = this.alpha;
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fill();
+    }
+}
+
+function createFirework() {
+    const x = Math.random() * canvas.width;
+    const y = Math.random() * canvas.height * 0.7;
+    const colors = ["red", "yellow", "blue", "green", "purple"];
+    const color = colors[Math.floor(Math.random() * colors.length)];
+    fireworks.push(new Firework(x, y, color));
+}
+
+function animateFireworks() {
+    requestAnimationFrame(animateFireworks);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    fireworks.forEach((fw, index) => {
+        fw.update();
+        fw.draw();
+        if (fw.alpha <= 0) fireworks.splice(index, 1);
+    });
+}
+
+setInterval(createFirework, 200);
+animateFireworks();
+......................................................................................
+...................................................................................
